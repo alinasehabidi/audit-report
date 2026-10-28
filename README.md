@@ -1,6 +1,6 @@
-# Springfield Properties – SEO, AEO & GEO Audit Dashboard
+# Springfield Properties – Website & AI Search Audit
 
-Interactive Streamlit dashboard of the audit of https://springfieldproperties.ae/ (live site audited 28 October 2026).
+A guided Streamlit presentation for management, built from the audit of https://springfieldproperties.ae/ (live site audited 28 October 2026).
 Prepared by Ali Naseh.
 
 ## Run locally
@@ -19,10 +19,11 @@ streamlit run app.py
 ## Project structure
 
 ```
-app.py                     Dashboard (10 tabs)
+app.py                     Presentation (6 tabs: Overview, What I found, AI search check, 90-day plan, What else I can do, Details for the team)
 requirements.txt           Python packages
-.streamlit/config.toml     Dark navy theme
+.streamlit/config.toml     Navy-and-white theme based on Springfield's logo
 data/findings.json         Findings register: 23 verified problems, 10 opportunities, 8 needs-access items
+data/growth_services.json  'What else I can do' activities (edit to add or remove services)
 data/roadmap.json          Phases (48 h, 14, 30, 90 days) and workstreams
 data/kpis.json             Measured crawl metrics, third-party AI grader scores, unavailable metrics
 data/website_errors.csv    74 page-level errors (from Springfield_Website_Errors_Audit.xlsx)
@@ -45,4 +46,3 @@ data/cutoff_descriptions.csv 44 examples of listing descriptions cut mid-word
 
 - No traffic, rankings, search volumes, Core Web Vitals or AI citation counts are estimated.
 - AI visibility scores come from one third-party grader run on 28 Oct 2026 and are labelled as such.
-- The optional "illustrative layout" chart in the KPI tab uses sample index values and is watermarked as not Springfield data.

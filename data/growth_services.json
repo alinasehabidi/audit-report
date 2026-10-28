@@ -1,0 +1,112 @@
+{
+  "intro": "Fixing the website is step one. AI assistants and Google's answer boxes also look at what other trusted websites say about Springfield. These are the extra things I can do to get Springfield talked about, listed and cited across the web.",
+  "evidence_levels": {
+    "Proven": "Long-established search and PR practice with clear evidence",
+    "Emerging": "Widely observed in AI answers, but no search engine publishes how much it counts"
+  },
+  "services": [
+    {
+      "group": "Get mentioned on other websites",
+      "title": "Features and guest articles on property and business sites",
+      "what": "Place expert articles and company stories on respected UAE sites: Khaleej Times, Gulf News, Arabian Business, Zawya, Property Finder and Bayut blogs, and established real estate blogs.",
+      "why": "AI assistants and Google lean on trusted editorial sites when they describe a company. Today Springfield is mostly quoted for market numbers, rarely featured as a company.",
+      "how": ["Build a media list of 30 UAE property, business and expat publications", "Pitch 2 company stories a month (18 years in Dubai, Burj Khalifa feature with Emaar, family business)", "Write guest articles under named Springfield experts", "Any paid placement is labelled sponsored and its links marked rel=\"sponsored\", as Google requires"],
+      "effort": "2–3 days a month", "impact_time": "2–4 months", "evidence": "Proven", "aeo_geo": "GEO + AEO"
+    },
+    {
+      "group": "Get mentioned on other websites",
+      "title": "Data-led PR from Springfield's market reports",
+      "what": "Turn each quarterly and monthly report into 3–5 headline numbers and send them to journalists, so articles cite 'according to Springfield Properties'.",
+      "why": "Original data is the most citable thing an agency owns. Every article that quotes it links the Springfield name to Dubai market expertise.",
+      "how": ["One-page press summary per report", "Send to property editors within 7 days of month end", "Publish the same numbers on the website with a date and named analyst"],
+      "effort": "1 day a month", "impact_time": "1–3 months", "evidence": "Proven", "aeo_geo": "GEO"
+    },
+    {
+      "group": "Get mentioned on other websites",
+      "title": "Agency rankings, awards and 'best agency' lists",
+      "what": "Submit Springfield to agency rankings and industry lists that accept nominations, and to awards (Arabian Business, Entrepreneur Middle East lists, developer broker awards).",
+      "why": "When people ask AI 'best real estate agency in Dubai', answers draw on these lists. Springfield is not in the Real Estate Club Dubai 2026 ranking of 41 agencies.",
+      "how": ["List every ranking, directory and award with its criteria and deadline", "Prepare one fact sheet: founded 2008, RERA ORN 11929, agents, offices, developer awards", "Submit and track"],
+      "effort": "2 days, then 2 hours a month", "impact_time": "1–6 months", "evidence": "Emerging", "aeo_geo": "GEO"
+    },
+    {
+      "group": "Build Springfield's identity online",
+      "title": "Wikipedia readiness and Wikidata",
+      "what": "Create a Wikidata entry now, and prepare the path to a Wikipedia article: gather independent coverage, then submit a draft through Wikipedia's review process with paid-editing disclosure.",
+      "why": "Wikipedia and Wikidata are among the sources AI models and Google use to understand who a company is.",
+      "how": ["Wikidata item: founded 2008, RERA ORN, offices, website, leadership, official profiles", "Collect 3–4 independent, in-depth articles about Springfield (not interviews or press releases)", "Draft the article neutrally and submit it through Articles for Creation, disclosing the paid relationship", "Never edit undisclosed: Wikipedia deletes promotional pages and can blacklist the brand"],
+      "effort": "1 day now; 2–3 days when coverage exists", "impact_time": "Wikidata: weeks. Wikipedia: 6–12 months, depends on press coverage", "evidence": "Emerging", "aeo_geo": "GEO",
+      "note": "Wikipedia approval cannot be promised by anyone. Today the coverage is mostly interviews and market quotes, which do not meet its notability rules yet. The PR work above is what makes a page possible."
+    },
+    {
+      "group": "Build Springfield's identity online",
+      "title": "One consistent company profile everywhere",
+      "what": "Same name, address, phone, founding year and description on Google Business Profile (both offices), Property Finder, Bayut, LinkedIn, Facebook, Instagram, X, Crunchbase and UAE business directories.",
+      "why": "Today the brand appears as 'Springfield Properties', 'Springfield Real Estate' and 'Spring Field Properties LLC SOC'. AI tools trust a company more when every source agrees.",
+      "how": ["Audit every profile", "Update to one approved name and description", "Link them all from the website's structured data (sameAs)"],
+      "effort": "2 days", "impact_time": "1–2 months", "evidence": "Proven", "aeo_geo": "SEO + GEO"
+    },
+    {
+      "group": "Build Springfield's identity online",
+      "title": "Client review programme",
+      "what": "Ask happy buyers and tenants for reviews on Google (both offices), Property Finder and Bayut, at handover or key collection.",
+      "why": "Reviews feed local search and the sentiment AI tools report. Springfield's sentiment is already good; more volume spreads it across more sources.",
+      "how": ["Automated WhatsApp or email request after each deal", "Reply to every review", "Never buy or write reviews"],
+      "effort": "1 day setup, then automatic", "impact_time": "1–3 months", "evidence": "Proven", "aeo_geo": "SEO + GEO"
+    },
+    {
+      "group": "Build Springfield's identity online",
+      "title": "Founder and agent thought leadership",
+      "what": "Regular LinkedIn posts and articles from leadership and senior consultants, podcast guest spots and event talks, each linked to their Springfield profile page.",
+      "why": "Named experts with a visible track record make Springfield's content more credible to readers and to search engines.",
+      "how": ["Monthly content calendar for 3–5 experts", "AI-assisted drafts they approve", "Expert profile pages on the website with RERA BRN"],
+      "effort": "2 days a month", "impact_time": "2–4 months", "evidence": "Proven", "aeo_geo": "AEO + GEO"
+    },
+    {
+      "group": "Be where buyers ask questions",
+      "title": "Video answers on YouTube",
+      "what": "Short area tours and answers to buyer questions ('Is Dubai Hills good for families?', 'How does the Golden Visa work?'), with transcripts on the matching website page.",
+      "why": "Video results and YouTube pages appear often in Google's results and AI answers for 'how' and 'is it worth it' questions.",
+      "how": ["One question per video, answer in the first 20 seconds", "Upload transcript and chapters", "Embed on the area guide"],
+      "effort": "2 days a month", "impact_time": "2–4 months", "evidence": "Emerging", "aeo_geo": "AEO + GEO"
+    },
+    {
+      "group": "Be where buyers ask questions",
+      "title": "Expert answers in online communities",
+      "what": "Helpful, clearly disclosed answers from a named Springfield consultant on Reddit (Dubai and real estate communities) and Quora.",
+      "why": "Forum discussions are frequently quoted in AI answers. Honest expert answers put Springfield in those conversations.",
+      "how": ["Weekly scan for questions on visas, fees and areas", "Answer fully; link only when it truly helps", "Always state the Springfield affiliation"],
+      "effort": "2 hours a week", "impact_time": "1–3 months", "evidence": "Emerging", "aeo_geo": "GEO"
+    },
+    {
+      "group": "Be where buyers ask questions",
+      "title": "Free tools buyers bookmark",
+      "what": "Buying-cost calculator, Golden Visa eligibility checker and rental-yield calculator on the website.",
+      "why": "Tools answer common questions directly, get linked by other sites and generate leads.",
+      "how": ["Build with current DLD fees and visa rules", "Add a short explanation and sources under each tool", "Capture an optional enquiry at the result"],
+      "effort": "3–5 days", "impact_time": "2–3 months", "evidence": "Proven", "aeo_geo": "AEO + SEO"
+    },
+    {
+      "group": "Be where buyers ask questions",
+      "title": "Guides in buyers' languages",
+      "what": "Arabic first, then Russian, Hindi and Chinese versions of the top area guides, cost guide and Golden Visa guide.",
+      "why": "AI assistants answer in the user's language and prefer sources in that language. The enquiry form already offers five languages.",
+      "how": ["Translate after the English pages are corrected", "Native-speaker review", "hreflang tags"],
+      "effort": "5 days per language", "impact_time": "2–4 months", "evidence": "Proven", "aeo_geo": "SEO + AEO"
+    },
+    {
+      "group": "Measure it",
+      "title": "Monthly AI visibility report",
+      "what": "The same 30 buyer questions asked each month in ChatGPT, Gemini, Perplexity and Copilot, plus AI referral traffic from GA4 and Bing Webmaster Tools.",
+      "why": "Shows management whether Springfield is being named more often, and which pages AI tools cite.",
+      "how": ["Fixed question set: agency choice, areas, visas, costs, off-plan", "Save answers and screenshots", "One-page monthly summary"],
+      "effort": "0.5 day a month", "impact_time": "From month 1", "evidence": "Proven", "aeo_geo": "Measurement"
+    }
+  ],
+  "wont_do": [
+    "Buy links or join link schemes (against Google's spam policies)",
+    "Write fake or paid reviews",
+    "Edit Wikipedia without disclosing the paid relationship",
+    "Promise rankings, AI citations or a Wikipedia page"
+  ]
+}
