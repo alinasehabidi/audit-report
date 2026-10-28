@@ -1,0 +1,175 @@
+{
+  "phases": [
+    {
+      "key": "48 hours",
+      "label": "First 48 hours",
+      "start_day": 0,
+      "end_day": 2,
+      "deliverables": [
+        "Correct F01–F04, F06, F17–F21",
+        "Confirm legal company name",
+        "List of official profiles",
+        "Tracking test (form, call, WhatsApp)",
+        "Baseline: GSC, GA4, PageSpeed, 30-prompt AI test"
+      ],
+      "effort": "~2 days (MarTech) + 0.5 day developer",
+      "independent": [
+        "Content corrections in CMS",
+        "Baseline AI prompt test",
+        "PageSpeed runs"
+      ],
+      "needs_access": [
+        "CMS, CRM, GSC, GA4/GTM",
+        "Compliance sign-off on visa wording"
+      ],
+      "risks": [
+        "Visa rules change again",
+        "Legal name unclear"
+      ],
+      "outcome": "0 pages with outdated visa minimum, wrong ORN or placeholder titles; baseline signed off",
+      "kpis": [
+        "Pages with outdated visa minimum = 0",
+        "Wrong ORN = 0",
+        "Placeholder titles = 0"
+      ]
+    },
+    {
+      "key": "14 days",
+      "label": "Days 3–14",
+      "start_day": 2,
+      "end_day": 14,
+      "deliverables": [
+        "Listing template: titles, descriptions, alt text, og:image, links, title-deed field",
+        "Brand render rule",
+        "Central regulated-facts block",
+        "Key figures on top 8 area guides",
+        "Tracking fixed",
+        "Profiles aligned"
+      ],
+      "effort": "~8 days (MarTech) + 4–5 days developer",
+      "independent": [
+        "Template specifications",
+        "Area-guide figures",
+        "Profile updates"
+      ],
+      "needs_access": [
+        "Developer for templates",
+        "CRM admin",
+        "Data export for figures"
+      ],
+      "risks": [
+        "Developer availability",
+        "Listing feed overwrites site fixes"
+      ],
+      "outcome": "Template fixes on 100% of listings; form, call and WhatsApp tracked as key events",
+      "kpis": [
+        "Descriptions cut mid-word = 0",
+        "Non-approved name variants = 0",
+        "Key events firing = 3/3"
+      ]
+    },
+    {
+      "key": "30 days",
+      "label": "Days 15–30",
+      "start_day": 14,
+      "end_day": 30,
+      "deliverables": [
+        "Merged visa and cost guides",
+        "Q3 2026 + missing monthly reports in HTML",
+        "Author boxes",
+        "Schema enrichment",
+        "5 community landing pages",
+        "Wikidata + ranking submissions",
+        "Dashboard live"
+      ],
+      "effort": "~10 days (MarTech + Content) + 3 days developer",
+      "independent": [
+        "Writing",
+        "Wikidata",
+        "Ranking submissions",
+        "Dashboard build"
+      ],
+      "needs_access": [
+        "Analyst data",
+        "Consultant consent for bylines",
+        "Developer"
+      ],
+      "risks": [
+        "Data delays",
+        "Approval cycles"
+      ],
+      "outcome": "Priority pages indexed; first monthly AI-visibility report against baseline",
+      "kpis": [
+        "Priority pages indexed (GSC)",
+        "AI share of voice vs baseline",
+        "Reports published on schedule"
+      ]
+    },
+    {
+      "key": "90 days",
+      "label": "Days 31–90",
+      "start_day": 30,
+      "end_day": 90,
+      "deliverables": [
+        "Monthly data posts",
+        "Arabic versions of top guides",
+        "More landing pages where data shows demand",
+        "Company-story PR",
+        "AI-assisted content workflow with human fact-check",
+        "Roadmap review at day 60 and 90"
+      ],
+      "effort": "~3 days/week ongoing",
+      "independent": [
+        "Workflow",
+        "Content",
+        "Reporting"
+      ],
+      "needs_access": [
+        "Translator",
+        "PR contacts",
+        "Developer for hreflang"
+      ],
+      "risks": [
+        "Scaling content before quality is proven"
+      ],
+      "outcome": "Targets set from baseline: organic clicks and qualified enquiries from priority pages, AI share of voice",
+      "kpis": [
+        "Organic clicks to priority pages",
+        "Qualified enquiries from organic",
+        "AI share of voice"
+      ]
+    }
+  ],
+  "workstreams": {
+    "Accuracy": [
+      "Fix visa, ORN, titles, contacts",
+      "Central facts block + compliance check",
+      "Merged visa and cost guides live",
+      "Quarterly fact re-verification"
+    ],
+    "Templates & tech": [
+      "Placeholder titles, brand render rule",
+      "Listing titles, alt, links, descriptions",
+      "Schema enrichment, 5 landing pages",
+      "Arabic pages, hreflang"
+    ],
+    "Content & AEO": [
+      "Prioritise topics from GSC queries",
+      "Key figures on top 8 area guides",
+      "Q3 report in HTML, named authors",
+      "Monthly data posts, refresh by results"
+    ],
+    "Entity & GEO": [
+      "Confirm legal name and profiles list",
+      "Align GBP, portals, socials, sameAs",
+      "Wikidata, ranking submissions, PR",
+      "Company stories in the press"
+    ],
+    "Measurement": [
+      "Baseline: GSC, GA4, CWV, AI prompts",
+      "Fix tracking for form/call/WhatsApp",
+      "Dashboard live, first AI report",
+      "Monthly reports, refine roadmap"
+    ]
+  }
+}

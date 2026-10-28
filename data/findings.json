@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "F01",
+    "type": "Verified problem",
+    "category": "AEO",
+    "title": "Outdated 2-year visa minimum (AED 750,000)",
+    "affected": "/developer/, /projects/ and 7 project FAQs",
+    "urls": [
+      "https://springfieldproperties.ae/developer/",
+      "https://springfieldproperties.ae/projects/",
+      "https://springfieldproperties.ae/projects/rivera-at-the-valley-by-emaar-properties/",
+      "https://springfieldproperties.ae/projects/terra-heights-at-dubai-expo-city-by-emaar-properties/",
+      "https://springfieldproperties.ae/projects/vida-residences-hillside-emaar/",
+      "https://springfieldproperties.ae/projects/greenspoint-at-emaar-south/",
+      "https://springfieldproperties.ae/projects/altan-at-dubai-creek-harbour-by-emaar-properties/",
+      "https://springfieldproperties.ae/projects/silva-at-dubai-creek-harbour-by-emaar-properties/",
+      "https://springfieldproperties.ae/projects/expo-valley-views-expo-city-dubai/"
+    ],
+    "evidence": "FAQ text states AED 750,000 as the minimum for the 2-year property visa. Contradicts Springfield's own Q2 2026 report ('The AED 750,000 property visa floor was removed') and Khaleej Times, 29 Apr 2026 (no minimum for sole owners; AED 400,000 per joint owner).",
+    "impact": "Misleads buyers on a purchase decision; trust and compliance risk.",
+    "solution": "Move the visa answer into one central content block used by every project FAQ; rewrite to the current rule; add a 'last verified' date.",
+    "steps": [
+      "Confirm current rule with DLD/GDRFA",
+      "Create central 'regulated facts' block in CMS",
+      "Replace FAQ answers on 9 pages",
+      "Re-crawl for '750,000' + 'visa'"
+    ],
+    "dependencies": "CMS access; DLD/GDRFA confirmation; compliance sign-off",
+    "priority": "Critical",
+    "effort": "0.5 day",
+    "role": "Content + Compliance",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "0 pages state AED 750,000 as a minimum",
+    "validation": "Site search / re-crawl for '750,000' + 'visa'",
+    "status": "Open"
+  },
+  {
+    "id": "F02",
+    "type": "Verified problem",
+    "category": "AEO",
+    "title": "Outdated Golden Visa rules in 3 guides",
+    "affected": "3 blog guides + Expo Valley Views FAQ",
+    "urls": [
+      "https://springfieldproperties.ae/blog/everything-you-need-to-know-about-dubais-golden-visa-program/",
+      "https://springfieldproperties.ae/blog/how-to-apply-for-a-property-investor-visa-in-dubai-a-step-by-step-guide/",
+      "https://springfieldproperties.ae/blog/golden-visa-dubai/",
+      "https://springfieldproperties.ae/projects/expo-valley-views-expo-city-dubai/"
+    ],
+    "evidence": "'10-year visa needs a minimum investment of AED 10 million, 40% in real estate, no loans'; 'must be fully paid (not mortgaged)'; 'Three-Year' investor visa at AED 750,000 and 'Five-Year' at AED 5M. Property Finder: AED 2M threshold; mortgaged and off-plan property can qualify; no minimum paid-down since Jan 2024.",
+    "impact": "Same as F01; three posts compete for one topic.",
+    "solution": "Merge into one canonical Golden Visa and property visa guide; 301 redirect the others.",
+    "steps": [
+      "Draft merged guide (answer-first)",
+      "Compliance check",
+      "Publish and 301 the old posts",
+      "Update internal links"
+    ],
+    "dependencies": "CMS; compliance",
+    "priority": "Critical",
+    "effort": "1.5 days",
+    "role": "Content + Compliance",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "One canonical visa guide; others redirect",
+    "validation": "URL Inspection; redirect check",
+    "status": "Open"
+  },
+  {
+    "id": "F03",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Wrong RERA ORN '1192' on 3 listings",
+    "affected": "SP-S-6430, SP-S-6660, SP-R-8609",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/2-bed-apartment-golf-views-motivated-seller-sp-s-6430/",
+      "https://springfieldproperties.ae/for-sale/centre-kitchen-large-bua-single-row-sp-s-6660/",
+      "https://springfieldproperties.ae/for-rent/centre-kitchen-large-bua-single-row-sp-r-8609/"
+    ],
+    "evidence": "Listing sign-off line shows 'RERA ORN: 1192'; the correct ORN 11929 appears on 272 other pages.",
+    "impact": "Regulatory accuracy on a licence number.",
+    "solution": "Correct the 3 listings now; replace the free-typed sign-off with a locked licence field.",
+    "steps": [
+      "Edit 3 listing records in CRM",
+      "Re-sync",
+      "Re-crawl for 'ORN'"
+    ],
+    "dependencies": "CRM / listing tool",
+    "priority": "Critical",
+    "effort": "30 min",
+    "role": "Listings admin",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "Only '11929' site-wide",
+    "validation": "Re-crawl for 'ORN'",
+    "status": "Open"
+  },
+  {
+    "id": "F04",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Unfilled %currentyear% / %sitename% in 28 page titles",
+    "affected": "/projects/, 12 developer pages, 15 blog posts",
+    "urls": [
+      "https://springfieldproperties.ae/projects/",
+      "https://springfieldproperties.ae/developer/emaar/",
+      "https://springfieldproperties.ae/developer/damac-properties/",
+      "https://springfieldproperties.ae/blog/rera-forms-in-dubai/",
+      "https://springfieldproperties.ae/blog/apartment-price-in-dubai/"
+    ],
+    "evidence": "Title tag example: 'Off Plan Properties Dubai %currentyear% | New Launches & Prices'. Full list in the 'Placeholder titles' data.",
+    "impact": "Broken titles visible in Google results on hub, developer and blog pages.",
+    "solution": "Fix the title variables in the template; set a fallback.",
+    "steps": [
+      "Find title template variables",
+      "Replace with year / 'Springfield Properties'",
+      "Re-crawl titles"
+    ],
+    "dependencies": "Developer",
+    "priority": "High",
+    "effort": "0.5 day",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "48 hours",
+    "success_metric": "0 titles containing '%'",
+    "validation": "Re-crawl titles; Search Console",
+    "status": "Open"
+  },
+  {
+    "id": "F05",
+    "type": "Verified problem",
+    "category": "GEO",
+    "title": "Company name in 15+ forms on 281 pages",
+    "affected": "Listing descriptions (280) + privacy policy",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/",
+      "https://springfieldproperties.ae/privacy-policy/"
+    ],
+    "evidence": "Variants include 'Spring Field Properties LLC SOC', 'Spring Field Real Estate', 'Springfield Real Estate', 'SPRING FIELD REAL ESTATE'. Site-controlled elements (logo alt, og:site_name, footer) say 'Springfield Properties'. Per-URL list in 'Brand name variants'.",
+    "impact": "Weaker brand and entity recognition; looks unprofessional.",
+    "solution": "Confirm legal name; locked licence field in CRM; render rule on the website; bulk clean; weekly check.",
+    "steps": [
+      "Verify legal name (trade licence, DLD register)",
+      "Locked licence line in CRM",
+      "Website render rule for variants",
+      "Bulk clean CRM export",
+      "Weekly automated scan"
+    ],
+    "dependencies": "Trade licence; CRM; developer",
+    "priority": "High",
+    "effort": "2–3 days",
+    "role": "MarTech + Developer + Listings admin",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "0 non-approved variants",
+    "validation": "Weekly automated scan",
+    "status": "Open"
+  },
+  {
+    "id": "F06",
+    "type": "Verified problem",
+    "category": "Local SEO",
+    "title": "Privacy policy contact details differ from the rest of the site",
+    "affected": "/privacy-policy/",
+    "urls": [
+      "https://springfieldproperties.ae/privacy-policy/"
+    ],
+    "evidence": "Email info@springfield-re.com; phones +971 54 561 6583 and +971 4 4542588; 'Office 104, 105 & 106'. Contact page: info@springfieldproperties.ae, +971 50 631 9606, Office 102-106.",
+    "impact": "Conflicting business facts for users, Google and AI assistants.",
+    "solution": "Update to the contact-page details after confirming which are current.",
+    "steps": [
+      "Confirm current details",
+      "Legal review",
+      "Update page"
+    ],
+    "dependencies": "Legal review",
+    "priority": "High",
+    "effort": "1 hour",
+    "role": "MarTech + Legal",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "Same name, address, phone on all pages",
+    "validation": "Re-crawl phones/emails",
+    "status": "Open"
+  },
+  {
+    "id": "F07",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Listing meta descriptions cut mid-word",
+    "affected": "Listing template (249 listings)",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/prime-location-modern-layout-motivated-seller-sp-s-6817/"
+    ],
+    "evidence": "249 listing meta descriptions end mid-word, e.g. SP-S-6817 ends '...offers a luxuriou'. Examples in 'Cut-off descriptions'.",
+    "impact": "Lower click-through from search and shared links.",
+    "solution": "Generate a 140–155 character summary from listing fields; cut at a word boundary.",
+    "steps": [
+      "Define description pattern",
+      "Implement in template",
+      "Re-crawl"
+    ],
+    "dependencies": "Developer",
+    "priority": "High",
+    "effort": "0.5–1 day",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "0 descriptions ending mid-word",
+    "validation": "Re-crawl meta descriptions",
+    "status": "Open"
+  },
+  {
+    "id": "F08",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Listing titles repeat location and lead with sales phrases",
+    "affected": "Listing template",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/"
+    ],
+    "evidence": "Title: 'Modern 2BR Living | Parkwood Dubai Hills Estate, Dubai Hills Estate, Dubai'.",
+    "impact": "Weak relevance for searches like '2 bed in Parkwood'.",
+    "solution": "Field-based pattern: '{Beds} {Type} for {Sale/Rent} in {Building}, {Community} | Springfield'; agent tagline as subtitle.",
+    "steps": [
+      "Agree pattern",
+      "Implement title + H1",
+      "Sample 20 listings"
+    ],
+    "dependencies": "Developer; listing fields",
+    "priority": "High",
+    "effort": "1 day",
+    "role": "Developer + MarTech",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "Pattern applied to all listings",
+    "validation": "Sample 20 listings; GSC CTR by listing",
+    "status": "Open"
+  },
+  {
+    "id": "F09",
+    "type": "Verified problem",
+    "category": "AEO",
+    "title": "Contradictions inside buyer guides",
+    "affected": "2 guides",
+    "urls": [
+      "https://springfieldproperties.ae/blog/property-tax-in-dubai/",
+      "https://springfieldproperties.ae/blog/golden-visa-dubai/"
+    ],
+    "evidence": "DLD 4% fee: 'typically split 50/50', 'typically borne by the buyer' and 'by law paid by the buyer' on one page. Golden Visa processing: '7 – 10 business days' and '2 to 4 weeks' on one page.",
+    "impact": "Answer engines may skip or misquote the page.",
+    "solution": "One statement per fact across all guides.",
+    "steps": [
+      "List regulated facts",
+      "Agree one wording",
+      "Update guides"
+    ],
+    "dependencies": "Compliance",
+    "priority": "High",
+    "effort": "0.5 day",
+    "role": "Content",
+    "owner": "Independent",
+    "phase": "14 days",
+    "success_metric": "0 internal contradictions on top 10 guides",
+    "validation": "Manual review checklist",
+    "status": "Open"
+  },
+  {
+    "id": "F10",
+    "type": "Verified problem",
+    "category": "GEO",
+    "title": "Market data publishing stalled; no dates or analysts",
+    "affected": "/reports/",
+    "urls": [
+      "https://springfieldproperties.ae/reports/",
+      "https://springfieldproperties.ae/reports/q2-2026/"
+    ],
+    "evidence": "Newest monthly report: May 2026; no Q3 2026 report; site promises 'What actually sold, once a month'. Report pages have no publication date or named analyst; top-10 area tables sit in a gated PDF.",
+    "impact": "Loses Springfield's most citable asset.",
+    "solution": "Publish missing months and Q3 2026; headline tables in HTML; date + named analyst.",
+    "steps": [
+      "Pull transaction data",
+      "Publish Jun–Sep + Q3",
+      "HTML tables + byline",
+      "Monthly cadence"
+    ],
+    "dependencies": "Data source; analyst time",
+    "priority": "High",
+    "effort": "2–3 days, then monthly",
+    "role": "MarTech + Analyst",
+    "owner": "Company access",
+    "phase": "30 days",
+    "success_metric": "Report within 15 days of each month end",
+    "validation": "Reports page dates",
+    "status": "Open"
+  },
+  {
+    "id": "F11",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Empty image alt text on listings, projects and area guides",
+    "affected": "Listing, project, area templates",
+    "urls": [
+      "https://springfieldproperties.ae/projects/parkwood-at-dubai-hills-estate-by-emaar/",
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/"
+    ],
+    "evidence": "Gallery, floor plan, map and card images have empty alt text; only logos carry alt text.",
+    "impact": "Weaker image search and accessibility.",
+    "solution": "Generate alt text from fields, e.g. 'Living room, 2 bed apartment in Parkwood, Dubai Hills Estate'.",
+    "steps": [
+      "Alt pattern per image type",
+      "Implement",
+      "Lighthouse check"
+    ],
+    "dependencies": "Developer",
+    "priority": "Medium",
+    "effort": "1 day",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "Alt text on content images",
+    "validation": "Lighthouse accessibility audit",
+    "status": "Open"
+  },
+  {
+    "id": "F12",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Generic share image on listings",
+    "affected": "Listing template",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/"
+    ],
+    "evidence": "og:image = og-default.jpg instead of a property photo.",
+    "impact": "Links shared on WhatsApp and social show no property.",
+    "solution": "Use the first listing photo as og:image.",
+    "steps": [
+      "Map first photo to og:image",
+      "Test share preview"
+    ],
+    "dependencies": "Developer",
+    "priority": "Medium",
+    "effort": "0.5 day",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "og:image = property photo",
+    "validation": "Facebook Sharing Debugger / WhatsApp preview",
+    "status": "Open"
+  },
+  {
+    "id": "F13",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Listings not linked to project or area guide",
+    "affected": "Listing template",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/"
+    ],
+    "evidence": "SP-S-6777 says 'Developed by Emaar Properties' with no link to the Parkwood project page or the Dubai Hills Estate guide.",
+    "impact": "Weak internal linking to high-value pages.",
+    "solution": "Map listing building/community fields to project and area URLs; add 'About this building' and 'About this community' links.",
+    "steps": [
+      "Build mapping table",
+      "Add link blocks",
+      "Crawl internal links"
+    ],
+    "dependencies": "Developer; field mapping",
+    "priority": "Medium",
+    "effort": "1–2 days",
+    "role": "Developer + Listings admin",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "Links on all mapped listings",
+    "validation": "Crawl internal link counts",
+    "status": "Open"
+  },
+  {
+    "id": "F14",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "'Title deed' field shows the listing title",
+    "affected": "Listing template",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/"
+    ],
+    "evidence": "Title deed field on SP-S-6777 and others contains the listing title, not a deed number.",
+    "impact": "Confusing data on a legal field.",
+    "solution": "Fix the field mapping or hide the field when empty.",
+    "steps": [
+      "Check CRM field",
+      "Fix mapping / hide"
+    ],
+    "dependencies": "Developer; CRM field",
+    "priority": "Medium",
+    "effort": "0.5 day",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "Field correct or hidden",
+    "validation": "Sample check",
+    "status": "Open"
+  },
+  {
+    "id": "F15",
+    "type": "Verified problem",
+    "category": "AEO",
+    "title": "16 projects past handover still listed as off-plan",
+    "affected": "16 project pages (mostly Binghatti, Danube)",
+    "urls": [
+      "https://springfieldproperties.ae/projects/gemz-by-danube/",
+      "https://springfieldproperties.ae/projects/skyz-by-danube/",
+      "https://springfieldproperties.ae/projects/opalz-by-danube/",
+      "https://springfieldproperties.ae/projects/binghatti-haven-in-dubai-sports-city-by-binghatti/"
+    ],
+    "evidence": "Handover dates from Q1 2025 to Q2 2026 shown on off-plan project pages (full list in website errors).",
+    "impact": "Stale answers on handover questions.",
+    "solution": "Monthly status review; move to 'Ready' with resale listings.",
+    "steps": [
+      "Check status with developers",
+      "Update pages",
+      "Monthly review"
+    ],
+    "dependencies": "Developer updates",
+    "priority": "Medium",
+    "effort": "1 day, then monthly",
+    "role": "Listings admin",
+    "owner": "Independent",
+    "phase": "30 days",
+    "success_metric": "0 past dates on off-plan pages",
+    "validation": "Monthly crawl",
+    "status": "Open"
+  },
+  {
+    "id": "F16",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Spelling errors on 25 pages + 'childrens' label on 171 listings",
+    "affected": "See website errors",
+    "urls": [
+      "https://springfieldproperties.ae/for-rent/furnished-high-floor-flexiable-cheques-sp-r-8697/",
+      "https://springfieldproperties.ae/for-sale/mortageble-bcc-ready-multiple-units-available-sp-s-6939/"
+    ],
+    "evidence": "e.g. 'Flexiable', 'Mortageble', 'Glass Partation', 'EMAAR ProjectT', 'Condtions', 'Irqa', 'Conceirge'.",
+    "impact": "Credibility.",
+    "solution": "Correct each; add spell-check to the CRM workflow; fix the amenity label once in the template.",
+    "steps": [
+      "Correct 25 pages",
+      "Fix 'children's' label",
+      "Re-run spell scan"
+    ],
+    "dependencies": "Listings admin; developer for label",
+    "priority": "Medium",
+    "effort": "1 day",
+    "role": "Listings admin + Developer",
+    "owner": "Independent",
+    "phase": "14 days",
+    "success_metric": "0 flagged words",
+    "validation": "Re-run spell scan",
+    "status": "Open"
+  },
+  {
+    "id": "F17",
+    "type": "Verified problem",
+    "category": "GEO",
+    "title": "About page says 'over 13 years'",
+    "affected": "/about-us/",
+    "urls": [
+      "https://springfieldproperties.ae/about-us/"
+    ],
+    "evidence": "About FAQ: 'serving clients for over 13 years'; homepage says 18+ years and 'Established in 2008'.",
+    "impact": "Conflicting founding fact.",
+    "solution": "Change to 'since 2008'.",
+    "steps": [
+      "Edit FAQ"
+    ],
+    "dependencies": "CMS",
+    "priority": "Medium",
+    "effort": "15 min",
+    "role": "MarTech",
+    "owner": "Independent",
+    "phase": "48 hours",
+    "success_metric": "Consistent founding year",
+    "validation": "Re-crawl",
+    "status": "Open"
+  },
+  {
+    "id": "F18",
+    "type": "Verified problem",
+    "category": "GEO",
+    "title": "All press items dated 3 Jun 2026",
+    "affected": "/press/",
+    "urls": [
+      "https://springfieldproperties.ae/press/"
+    ],
+    "evidence": "All four press items show 'Published on 3 Jun 2026', including 'Dubai Real Estate - November 2025'.",
+    "impact": "Wrong dates on credibility signals.",
+    "solution": "Use original publication dates.",
+    "steps": [
+      "Find original dates",
+      "Update CMS"
+    ],
+    "dependencies": "CMS",
+    "priority": "Medium",
+    "effort": "1 hour",
+    "role": "MarTech",
+    "owner": "Independent",
+    "phase": "48 hours",
+    "success_metric": "Correct dates",
+    "validation": "Manual check",
+    "status": "Open"
+  },
+  {
+    "id": "F19",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Duplicate blog post",
+    "affected": "2 URLs",
+    "urls": [
+      "https://springfieldproperties.ae/blog/dubai-elite-enclaves-top-areas-where-millionaires-reside/",
+      "https://springfieldproperties.ae/blog/dubai-elite-enclaves-top-areas-where-millionaires-reside-2/"
+    ],
+    "evidence": "Both titled 'Discover the Top Areas Where Millionaires Reside in Dubai'.",
+    "impact": "Split signals.",
+    "solution": "Merge and 301 the '-2' URL.",
+    "steps": [
+      "Merge",
+      "301"
+    ],
+    "dependencies": "CMS",
+    "priority": "Low",
+    "effort": "1 hour",
+    "role": "MarTech",
+    "owner": "Independent",
+    "phase": "48 hours",
+    "success_metric": "One URL",
+    "validation": "Redirect check",
+    "status": "Open"
+  },
+  {
+    "id": "F20",
+    "type": "Verified problem",
+    "category": "AEO",
+    "title": "'Sizes start from 1 sq. ft.'",
+    "affected": "2 projects",
+    "urls": [
+      "https://springfieldproperties.ae/projects/chevalia-fields/",
+      "https://springfieldproperties.ae/projects/damac-islands-phase-2/"
+    ],
+    "evidence": "Project FAQ text: 'Sizes start from 1 sq. ft.'",
+    "impact": "Wrong fact.",
+    "solution": "Enter the real starting size.",
+    "steps": [
+      "Edit 2 records"
+    ],
+    "dependencies": "CMS",
+    "priority": "Low",
+    "effort": "15 min",
+    "role": "Listings admin",
+    "owner": "Independent",
+    "phase": "48 hours",
+    "success_metric": "Corrected",
+    "validation": "Manual check",
+    "status": "Open"
+  },
+  {
+    "id": "F21",
+    "type": "Verified problem",
+    "category": "Local SEO",
+    "title": "Different phone number on one project page",
+    "affected": "/projects/golf-greens/",
+    "urls": [
+      "https://springfieldproperties.ae/projects/golf-greens/"
+    ],
+    "evidence": "Shows +971 54 561 6583; main number is +971 50 631 9606.",
+    "impact": "Inconsistent contact details.",
+    "solution": "Use the main number (or confirm this one is current).",
+    "steps": [
+      "Edit page"
+    ],
+    "dependencies": "CMS",
+    "priority": "Low",
+    "effort": "15 min",
+    "role": "Listings admin",
+    "owner": "Independent",
+    "phase": "48 hours",
+    "success_metric": "Corrected",
+    "validation": "Re-crawl",
+    "status": "Open"
+  },
+  {
+    "id": "F22",
+    "type": "Verified problem",
+    "category": "Conversion",
+    "title": "WhatsApp pre-fill differs between listing and footer",
+    "affected": "Listing template",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/modern-2br-living-parkwood-dubai-hills-estate-sp-s-6777/"
+    ],
+    "evidence": "Listing button: '...(ref SP-S-6777)'; footer: different wording and casing ('Sp S 6777').",
+    "impact": "Harder to match WhatsApp chats to listings.",
+    "solution": "One message format with the reference code.",
+    "steps": [
+      "Unify templates",
+      "Click test"
+    ],
+    "dependencies": "Developer",
+    "priority": "Low",
+    "effort": "1 hour",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "14 days",
+    "success_metric": "One format",
+    "validation": "Click test",
+    "status": "Open"
+  },
+  {
+    "id": "F23",
+    "type": "Verified problem",
+    "category": "SEO",
+    "title": "Team page titles in 3 formats",
+    "affected": "/team/*",
+    "urls": [
+      "https://springfieldproperties.ae/team/zain-javaid-2/",
+      "https://springfieldproperties.ae/team/sonika-bhandari/",
+      "https://springfieldproperties.ae/team/omid-zare/"
+    ],
+    "evidence": "'Name', 'Name | Sales Advisor at Springfield Properties Dubai', 'Name – Sales Manager at Springfield Properties'.",
+    "impact": "Inconsistent.",
+    "solution": "One template: 'Name – Role | Springfield Properties'.",
+    "steps": [
+      "Template change"
+    ],
+    "dependencies": "Developer",
+    "priority": "Low",
+    "effort": "1 hour",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "30 days",
+    "success_metric": "One format",
+    "validation": "Re-crawl",
+    "status": "Open"
+  },
+  {
+    "id": "O01",
+    "type": "Opportunity",
+    "category": "AEO",
+    "title": "Key-figures block in area guides",
+    "affected": "23 area guides",
+    "urls": [
+      "https://springfieldproperties.ae/areas/dubai-hills-estate/"
+    ],
+    "evidence": "No price per sq ft, rent, yield or service charge figures; Dubai Hills meta description promises service charges but the page gives none.",
+    "impact": "More useful, more citable guides.",
+    "solution": "Template block: price/sq ft, rent, gross yield, service charges, metro, last updated + analyst; sourced from quarterly data.",
+    "steps": [
+      "Design block",
+      "Fill top 8 guides",
+      "Quarterly refresh"
+    ],
+    "dependencies": "Data; developer for block",
+    "priority": "High",
+    "effort": "3 days, then quarterly",
+    "role": "MarTech + Analyst",
+    "owner": "Independent",
+    "phase": "14 days",
+    "success_metric": "Block live on top 8 guides",
+    "validation": "Page check; GSC impressions for area queries",
+    "status": "Open"
+  },
+  {
+    "id": "O02",
+    "type": "Opportunity",
+    "category": "AEO",
+    "title": "Named authors and reviewers",
+    "affected": "Blog, reports, area guides",
+    "urls": [
+      "https://springfieldproperties.ae/blog/"
+    ],
+    "evidence": "Blog says posts are 'written by our research team' without naming anyone.",
+    "impact": "Expertise signals for readers and engines.",
+    "solution": "Author box with RERA BRN; Person schema; author pages.",
+    "steps": [
+      "Consultant consent",
+      "Author pages",
+      "Add to top 20 pages"
+    ],
+    "dependencies": "Consultant consent",
+    "priority": "High",
+    "effort": "1 day",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "30 days",
+    "success_metric": "Author on all new and top 20 pages",
+    "validation": "Rich Results Test",
+    "status": "Open"
+  },
+  {
+    "id": "O03",
+    "type": "Opportunity",
+    "category": "SEO",
+    "title": "Community + property-type landing pages",
+    "affected": "New pages",
+    "urls": [
+      "https://springfieldproperties.ae/for-sale/?type=apartment"
+    ],
+    "evidence": "Only filter URLs exist today (e.g. ?type=apartment).",
+    "impact": "Pages that match transactional searches.",
+    "solution": "Static pages like '2 Bed Apartments for Sale in Dubai Hills Estate' with intro, key figures, listings, FAQs, named consultant.",
+    "steps": [
+      "Pick 5 from GSC demand",
+      "Build template",
+      "Publish"
+    ],
+    "dependencies": "Developer; content",
+    "priority": "High",
+    "effort": "4–5 days",
+    "role": "Developer + Content",
+    "owner": "Developer",
+    "phase": "30 days",
+    "success_metric": "Pages indexed; leads attributed",
+    "validation": "GSC; GA4 landing page report",
+    "status": "Open"
+  },
+  {
+    "id": "O04",
+    "type": "Opportunity",
+    "category": "AEO",
+    "title": "Canonical visa and cost guides",
+    "affected": "7 overlapping posts",
+    "urls": [
+      "https://springfieldproperties.ae/blog/golden-visa-dubai/",
+      "https://springfieldproperties.ae/blog/property-tax-in-dubai/",
+      "https://springfieldproperties.ae/blog/sale-purchase-agreement-spa-dubai/",
+      "https://springfieldproperties.ae/blog/oqood/"
+    ],
+    "evidence": "Visa and fee topics spread over 7 posts with conflicting statements.",
+    "impact": "One authoritative answer per topic.",
+    "solution": "Merge, redirect, add cost table and calculator.",
+    "steps": [
+      "Merge",
+      "Redirect",
+      "Calculator"
+    ],
+    "dependencies": "CMS; compliance",
+    "priority": "High",
+    "effort": "3 days",
+    "role": "Content + Developer",
+    "owner": "Independent",
+    "phase": "30 days",
+    "success_metric": "2 canonical guides live",
+    "validation": "Redirect and GSC check",
+    "status": "Open"
+  },
+  {
+    "id": "O05",
+    "type": "Opportunity",
+    "category": "SEO",
+    "title": "Structured data enrichment",
+    "affected": "Home, blog, area templates",
+    "urls": [
+      "https://springfieldproperties.ae/",
+      "https://springfieldproperties.ae/areas/dubai-hills-estate/"
+    ],
+    "evidence": "Homepage: RealEstateAgent; blog: Article + BreadcrumbList; area: BreadcrumbList only.",
+    "impact": "Clear entity facts. Will not by itself produce rich results or AI citations.",
+    "solution": "Organization sameAs, both offices, RERA ORN; Article author + dateModified; Place on area guides.",
+    "steps": [
+      "Spec JSON-LD",
+      "Implement",
+      "Validate"
+    ],
+    "dependencies": "Developer",
+    "priority": "Medium",
+    "effort": "1–2 days",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "30 days",
+    "success_metric": "Valid markup on all templates",
+    "validation": "Rich Results Test; Schema validator",
+    "status": "Open"
+  },
+  {
+    "id": "O06",
+    "type": "Opportunity",
+    "category": "GEO",
+    "title": "Entity footprint: profiles, Wikidata, rankings",
+    "affected": "External profiles",
+    "urls": [
+      "https://realestateclubdubai.com/business-directory/real-estate-agencies/rankings-2026"
+    ],
+    "evidence": "Not in Real Estate Club Dubai 2026 ranking (41 agencies) or Driven Properties' agency guide; no Wikidata item; Property Finder profile named 'Springfield Real Estate'.",
+    "impact": "More consistent third-party mentions.",
+    "solution": "Align GBP, portals and socials; create Wikidata item; submit to rankings; pitch company stories.",
+    "steps": [
+      "Profile audit",
+      "Wikidata",
+      "Submissions",
+      "PR pitches"
+    ],
+    "dependencies": "Profile logins",
+    "priority": "Medium",
+    "effort": "2 days, then ongoing",
+    "role": "MarTech + PR",
+    "owner": "Company access",
+    "phase": "30 days",
+    "success_metric": "Profiles aligned; Wikidata live",
+    "validation": "Monthly AI prompt test",
+    "status": "Open"
+  },
+  {
+    "id": "O07",
+    "type": "Opportunity",
+    "category": "SEO",
+    "title": "Arabic content with hreflang",
+    "affected": "Top area guides, cost guide",
+    "urls": [
+      "https://springfieldproperties.ae/areas/"
+    ],
+    "evidence": "No language versions or hreflang; enquiry form already offers Arabic, Farsi, Hindi, Russian, Urdu.",
+    "impact": "Reach Arabic-speaking buyers.",
+    "solution": "Translate after English fixes; add hreflang.",
+    "steps": [
+      "Translate top 5",
+      "hreflang"
+    ],
+    "dependencies": "Translator; developer",
+    "priority": "Medium",
+    "effort": "5 days",
+    "role": "Content + Developer",
+    "owner": "Developer",
+    "phase": "90 days",
+    "success_metric": "Arabic pages indexed",
+    "validation": "GSC",
+    "status": "Open"
+  },
+  {
+    "id": "O08",
+    "type": "Opportunity",
+    "category": "GEO",
+    "title": "Leadership on the About page",
+    "affected": "/about-us/",
+    "urls": [
+      "https://springfieldproperties.ae/about-us/",
+      "https://springfieldproperties.ae/team/masroor-syed/",
+      "https://springfieldproperties.ae/team/osman-syed/",
+      "https://springfieldproperties.ae/team/farooq-syed/"
+    ],
+    "evidence": "Team pages name Masroor Syed (Chairman), Osman Syed (Managing Director), Farooq Syed; About page says only 'family-founded'.",
+    "impact": "Clear company identity.",
+    "solution": "Leadership section + Organization schema link.",
+    "steps": [
+      "Draft",
+      "Approval",
+      "Publish"
+    ],
+    "dependencies": "Approval",
+    "priority": "Medium",
+    "effort": "0.5 day",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "30 days",
+    "success_metric": "Section live",
+    "validation": "Manual check",
+    "status": "Open"
+  },
+  {
+    "id": "O09",
+    "type": "Opportunity",
+    "category": "SEO",
+    "title": "Split sitemap by page type",
+    "affected": "sitemap.xml",
+    "urls": [
+      "https://springfieldproperties.ae/sitemap.xml"
+    ],
+    "evidence": "One flat file of 748 URLs.",
+    "impact": "Easier index monitoring per page type.",
+    "solution": "Sitemap index with one sitemap per type.",
+    "steps": [
+      "Generate per-type sitemaps",
+      "Submit in GSC"
+    ],
+    "dependencies": "Developer",
+    "priority": "Low",
+    "effort": "0.5 day",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "30 days",
+    "success_metric": "Per-type coverage in GSC",
+    "validation": "GSC Sitemaps report",
+    "status": "Open"
+  },
+  {
+    "id": "O10",
+    "type": "Opportunity",
+    "category": "GEO",
+    "title": "llms.txt (optional, low priority)",
+    "affected": "Site root",
+    "urls": [
+      "https://springfieldproperties.ae/llms.txt"
+    ],
+    "evidence": "Returns an error today. Google's John Mueller (June 2026): 'purely speculative'; no AI systems appear to use it.",
+    "impact": "Minimal; not a ranking tactic.",
+    "solution": "Only after everything above.",
+    "steps": [
+      "Create file"
+    ],
+    "dependencies": "Developer",
+    "priority": "Low",
+    "effort": "1 hour",
+    "role": "Developer",
+    "owner": "Developer",
+    "phase": "90 days",
+    "success_metric": "File live",
+    "validation": "Fetch test",
+    "status": "Open"
+  },
+  {
+    "id": "A01",
+    "type": "Needs access",
+    "category": "SEO",
+    "title": "Core Web Vitals on mobile",
+    "affected": "5 templates",
+    "urls": [],
+    "evidence": "PageSpeed Insights API not reachable from the audit environment.",
+    "impact": "Page experience and conversion.",
+    "solution": "Run PageSpeed Insights on 5 template URLs; check GSC Core Web Vitals report.",
+    "steps": [
+      "Run PageSpeed Insights on 5 template URLs; check GSC Core Web Vitals report."
+    ],
+    "dependencies": "Google Search Console",
+    "priority": "High",
+    "effort": "2 hours",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "All templates 'Good' in field data",
+    "validation": "CrUX / GSC",
+    "status": "Open"
+  },
+  {
+    "id": "A02",
+    "type": "Needs access",
+    "category": "SEO",
+    "title": "Indexing coverage",
+    "affected": "All 748 URLs",
+    "urls": [],
+    "evidence": "No Search Console access.",
+    "impact": "Pages that never rank.",
+    "solution": "GSC Pages report filtered by sitemap.",
+    "steps": [
+      "GSC Pages report filtered by sitemap."
+    ],
+    "dependencies": "Google Search Console",
+    "priority": "High",
+    "effort": "2 hours",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "Indexed share per page type",
+    "validation": "GSC",
+    "status": "Open"
+  },
+  {
+    "id": "A03",
+    "type": "Needs access",
+    "category": "Analytics",
+    "title": "Conversion events (form, call, WhatsApp)",
+    "affected": "Forms, call, WhatsApp",
+    "urls": [],
+    "evidence": "No GA4 / GTM access.",
+    "impact": "Cannot prove which pages create leads.",
+    "solution": "GTM Preview + GA4 DebugView test of each event.",
+    "steps": [
+      "GTM Preview + GA4 DebugView test of each event."
+    ],
+    "dependencies": "GA4, Google Tag Manager",
+    "priority": "Critical",
+    "effort": "0.5 day",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "All 3 events recorded as key events",
+    "validation": "GA4 DebugView",
+    "status": "Open"
+  },
+  {
+    "id": "A04",
+    "type": "Needs access",
+    "category": "Analytics",
+    "title": "Lead source in CRM",
+    "affected": "CRM",
+    "urls": [],
+    "evidence": "No CRM access.",
+    "impact": "Lead quality by channel unknown.",
+    "solution": "Check CRM fields for source, landing page, listing reference.",
+    "steps": [
+      "Check CRM fields for source, landing page, listing reference."
+    ],
+    "dependencies": "CRM",
+    "priority": "High",
+    "effort": "0.5 day",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "14 days",
+    "success_metric": "Source on 95%+ of web leads",
+    "validation": "CRM report",
+    "status": "Open"
+  },
+  {
+    "id": "A05",
+    "type": "Needs access",
+    "category": "SEO",
+    "title": "Listing and project structured data",
+    "affected": "Listing, project templates",
+    "urls": [],
+    "evidence": "Not read during the audit.",
+    "impact": "Missing or invalid markup.",
+    "solution": "Rich Results Test on 3 URLs per template.",
+    "steps": [
+      "Rich Results Test on 3 URLs per template."
+    ],
+    "dependencies": "None (public tool)",
+    "priority": "Medium",
+    "effort": "1 hour",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "Valid markup",
+    "validation": "Test output",
+    "status": "Open"
+  },
+  {
+    "id": "A06",
+    "type": "Needs access",
+    "category": "SEO",
+    "title": "404s and broken links",
+    "affected": "Site-wide",
+    "urls": [],
+    "evidence": "No full crawler run; 404 page not testable from the audit environment.",
+    "impact": "Wasted crawl, poor UX.",
+    "solution": "Screaming Frog crawl; server logs.",
+    "steps": [
+      "Screaming Frog crawl; server logs."
+    ],
+    "dependencies": "Crawler licence; server logs",
+    "priority": "Medium",
+    "effort": "0.5 day",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "14 days",
+    "success_metric": "0 broken internal links",
+    "validation": "Crawl report",
+    "status": "Open"
+  },
+  {
+    "id": "A07",
+    "type": "Needs access",
+    "category": "Local SEO",
+    "title": "Google Business Profiles (both offices)",
+    "affected": "Dubai and Abu Dhabi",
+    "urls": [],
+    "evidence": "Only the Business Bay map listing is linked on the site.",
+    "impact": "Local visibility for Abu Dhabi.",
+    "solution": "Check both profiles: name, category, hours, links.",
+    "steps": [
+      "Check both profiles: name, category, hours, links."
+    ],
+    "dependencies": "Google Business Profile",
+    "priority": "Medium",
+    "effort": "2 hours",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "14 days",
+    "success_metric": "Both profiles consistent",
+    "validation": "GBP review",
+    "status": "Open"
+  },
+  {
+    "id": "A08",
+    "type": "Needs access",
+    "category": "SEO",
+    "title": "Impact of blocking /_next/image",
+    "affected": "robots.txt",
+    "urls": [],
+    "evidence": "Cannot see Google's fetches; all site photos load through /_next/image.",
+    "impact": "Images may not be indexed.",
+    "solution": "URL Inspection > crawled page resources; then remove the Disallow line.",
+    "steps": [
+      "URL Inspection > crawled page resources; then remove the Disallow line."
+    ],
+    "dependencies": "Google Search Console; developer",
+    "priority": "Medium",
+    "effort": "1 hour",
+    "role": "MarTech",
+    "owner": "Company access",
+    "phase": "48 hours",
+    "success_metric": "Images fetched",
+    "validation": "URL Inspection",
+    "status": "Open"
+  }
+]

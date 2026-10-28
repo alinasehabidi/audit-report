@@ -1,0 +1,152 @@
+{
+  "audit_date": "2026-10-28",
+  "measured_site_health": [
+    {
+      "metric": "Sitemap URLs crawled",
+      "value": 748,
+      "source": "Audit crawl, 28 Oct 2026"
+    },
+    {
+      "metric": "Pages with non-standard company name",
+      "value": 281,
+      "source": "Audit crawl"
+    },
+    {
+      "metric": "Listing descriptions cut mid-word",
+      "value": 249,
+      "source": "Audit crawl"
+    },
+    {
+      "metric": "Page titles with unfilled placeholders",
+      "value": 28,
+      "source": "Audit crawl"
+    },
+    {
+      "metric": "Pages stating outdated AED 750,000 visa minimum",
+      "value": 9,
+      "source": "Audit crawl"
+    },
+    {
+      "metric": "Projects past handover listed as off-plan",
+      "value": 16,
+      "source": "Audit crawl"
+    },
+    {
+      "metric": "Pages with spelling errors (page-specific)",
+      "value": 25,
+      "source": "Audit crawl + manual review"
+    },
+    {
+      "metric": "Listings with wrong RERA ORN",
+      "value": 3,
+      "source": "Audit crawl"
+    }
+  ],
+  "sitemap_mix": {
+    "For sale": 182,
+    "For rent": 100,
+    "Projects": 189,
+    "Blog": 92,
+    "Team": 72,
+    "Developers": 53,
+    "Area pages": 24,
+    "Report pages": 24,
+    "Other": 12
+  },
+  "ai_grader": {
+    "source": "Third-party AI search grader, run 28 Oct 2026 (one tool's scoring, not an official metric)",
+    "overall": {
+      "ChatGPT": 33,
+      "Perplexity": 54,
+      "Gemini": 57
+    },
+    "components": [
+      {
+        "component": "Brand recognition",
+        "max": 20,
+        "ChatGPT": 4,
+        "Perplexity": 8,
+        "Gemini": 11
+      },
+      {
+        "component": "Market score",
+        "max": 10,
+        "ChatGPT": 3,
+        "Perplexity": 3,
+        "Gemini": 3
+      },
+      {
+        "component": "Presence quality",
+        "max": 20,
+        "ChatGPT": 5,
+        "Perplexity": 9,
+        "Gemini": 11
+      },
+      {
+        "component": "Brand sentiment",
+        "max": 40,
+        "ChatGPT": 20,
+        "Perplexity": 33,
+        "Gemini": 31
+      },
+      {
+        "component": "Share of voice",
+        "max": 10,
+        "ChatGPT": 1,
+        "Perplexity": 1,
+        "Gemini": 1
+      }
+    ]
+  },
+  "unavailable": [
+    {
+      "area": "Organic visibility",
+      "metric": "Organic clicks, impressions, CTR, position",
+      "needs": "Google Search Console",
+      "status": "Not available – needs access"
+    },
+    {
+      "area": "Organic visibility",
+      "metric": "Bing clicks; Copilot citations",
+      "needs": "Bing Webmaster Tools (AI Performance report in limited beta)",
+      "status": "Not available – needs access"
+    },
+    {
+      "area": "Technical health",
+      "metric": "Core Web Vitals (LCP, INP, CLS)",
+      "needs": "PageSpeed Insights / GSC",
+      "status": "Not measured – run in first 48 hours"
+    },
+    {
+      "area": "Technical health",
+      "metric": "Indexed vs submitted URLs",
+      "needs": "GSC Pages report",
+      "status": "Not available – needs access"
+    },
+    {
+      "area": "AI citations",
+      "metric": "AI referral sessions (ChatGPT, Perplexity, Gemini, Copilot)",
+      "needs": "GA4",
+      "status": "Not available – needs access"
+    },
+    {
+      "area": "AI citations",
+      "metric": "Share of answers citing Springfield (30 fixed prompts)",
+      "needs": "Monthly manual test",
+      "status": "Baseline to be captured in first 48 hours"
+    },
+    {
+      "area": "Qualified leads",
+      "metric": "Form, call, WhatsApp key events",
+      "needs": "GA4 + GTM",
+      "status": "Not available – needs access"
+    },
+    {
+      "area": "Qualified leads",
+      "metric": "Qualified leads, viewings, deals by source",
+      "needs": "CRM",
+      "status": "Not available – needs access"
+    }
+  ],
+  "target_method": "Targets are set per page type after a 28-day clean baseline, adjusted for seasonality from 16 months of GSC data, and agreed with management. No percentage is promised before the baseline exists."
+}
