@@ -6,11 +6,11 @@
       "start_day": 0,
       "end_day": 2,
       "deliverables": [
-        "Correct F01–F04, F06, F17–F21",
+        "Correct outdated buyer information, licence numbers and broken titles",
         "Confirm legal company name",
         "List of official profiles",
         "Tracking test (form, call, WhatsApp)",
-        "Baseline: GSC, GA4, PageSpeed, 30-prompt AI test"
+        "Baseline: Search Console, Analytics, page speed, AI question test"
       ],
       "effort": "~2 days (MarTech) + 0.5 day developer",
       "independent": [
@@ -19,25 +19,25 @@
         "PageSpeed runs"
       ],
       "needs_access": [
-        "CMS, CRM, GSC, GA4/GTM",
-        "Compliance sign-off on visa wording"
+        "Website editor, CRM, Search Console, Analytics",
+        "Quick sign-off on regulated wording"
       ],
       "risks": [
-        "Visa rules change again",
-        "Legal name unclear"
+        "Legal name unclear",
+        "Slow access to systems"
       ],
-      "outcome": "0 pages with outdated visa minimum, wrong ORN or placeholder titles; baseline signed off",
+      "outcome": "No outdated buyer information, wrong licence numbers or broken titles; baseline signed off",
       "kpis": [
-        "Pages with outdated visa minimum = 0",
-        "Wrong ORN = 0",
-        "Placeholder titles = 0"
+        "Outdated pages = 0",
+        "Wrong licence numbers = 0",
+        "Broken titles = 0"
       ]
     },
     {
-      "key": "14 days",
-      "label": "Days 3–14",
+      "key": "Week 1",
+      "label": "Days 3–7",
       "start_day": 2,
-      "end_day": 14,
+      "end_day": 7,
       "deliverables": [
         "Listing template: titles, descriptions, alt text, og:image, links, title-deed field",
         "Brand render rule",
@@ -46,7 +46,7 @@
         "Tracking fixed",
         "Profiles aligned"
       ],
-      "effort": "~8 days (MarTech) + 4–5 days developer",
+      "effort": "~5 days (me) + 3–4 developer days",
       "independent": [
         "Template specifications",
         "Area-guide figures",
@@ -69,20 +69,20 @@
       ]
     },
     {
-      "key": "30 days",
-      "label": "Days 15–30",
-      "start_day": 14,
-      "end_day": 30,
+      "key": "Weeks 2–3",
+      "label": "Days 8–21",
+      "start_day": 7,
+      "end_day": 21,
       "deliverables": [
-        "Merged visa and cost guides",
-        "Q3 2026 + missing monthly reports in HTML",
-        "Author boxes",
-        "Schema enrichment",
+        "Trusted buying and cost guides",
+        "Q3 2026 report with a named analyst",
+        "Expert author profiles",
+        "Wikidata entry live; Wikipedia draft researched",
+        "First 4 blog articles published and distributed",
         "5 community landing pages",
-        "Wikidata + ranking submissions",
         "Dashboard live"
       ],
-      "effort": "~10 days (MarTech + Content) + 3 days developer",
+      "effort": "~10 days (me + writer) + 2–3 developer days",
       "independent": [
         "Writing",
         "Wikidata",
@@ -106,19 +106,18 @@
       ]
     },
     {
-      "key": "90 days",
-      "label": "Days 31–90",
-      "start_day": 30,
-      "end_day": 90,
+      "key": "Days 22–60",
+      "label": "Days 22–60",
+      "start_day": 21,
+      "end_day": 60,
       "deliverables": [
-        "Monthly data posts",
+        "Weekly blog publishing and distribution (LinkedIn, Medium, Substack, Quora, Reddit, industry sites)",
+        "Wikipedia article submitted when sources allow",
+        "Monthly data PR",
         "Arabic versions of top guides",
-        "More landing pages where data shows demand",
-        "Company-story PR",
-        "AI-assisted content workflow with human fact-check",
-        "Roadmap review at day 60 and 90"
+        "Monthly results report and next-quarter plan"
       ],
-      "effort": "~3 days/week ongoing",
+      "effort": "~3 days a week",
       "independent": [
         "Workflow",
         "Content",
@@ -132,7 +131,7 @@
       "risks": [
         "Scaling content before quality is proven"
       ],
-      "outcome": "Targets set from baseline: organic clicks and qualified enquiries from priority pages, AI share of voice",
+      "outcome": "Targets set from the baseline: Google clicks and enquiries from priority pages, AI share of voice, brand mentions on other sites",
       "kpis": [
         "Organic clicks to priority pages",
         "Qualified enquiries from organic",
@@ -142,10 +141,10 @@
   ],
   "workstreams": {
     "Accuracy": [
-      "Fix visa, ORN, titles, contacts",
-      "Central facts block + compliance check",
-      "Merged visa and cost guides live",
-      "Quarterly fact re-verification"
+      "Fix outdated pages, ORN, titles, contacts",
+      "Central facts block + sign-off",
+      "Trusted buying and cost guides live",
+      "Monthly fact checks"
     ],
     "Templates & tech": [
       "Placeholder titles, brand render rule",
@@ -154,16 +153,16 @@
       "Arabic pages, hreflang"
     ],
     "Content & AEO": [
-      "Prioritise topics from GSC queries",
+      "Topic list from Search Console",
       "Key figures on top 8 area guides",
-      "Q3 report in HTML, named authors",
-      "Monthly data posts, refresh by results"
+      "First 4 blogs published and distributed",
+      "Weekly blogs across 6+ platforms"
     ],
     "Entity & GEO": [
       "Confirm legal name and profiles list",
-      "Align GBP, portals, socials, sameAs",
-      "Wikidata, ranking submissions, PR",
-      "Company stories in the press"
+      "Align GBP, portals, socials",
+      "Wikidata live, Wikipedia draft, rankings",
+      "Wikipedia submission, press stories"
     ],
     "Measurement": [
       "Baseline: GSC, GA4, CWV, AI prompts",

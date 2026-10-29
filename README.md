@@ -24,7 +24,7 @@ requirements.txt           Python packages
 .streamlit/config.toml     Navy-and-white theme based on Springfield's logo
 data/findings.json         Findings register: 23 verified problems, 10 opportunities, 8 needs-access items
 data/growth_services.json  'What else I can do' activities (edit to add or remove services)
-data/roadmap.json          Phases (48 h, 14, 30, 90 days) and workstreams
+data/roadmap.json          60-day plan phases (48 h, week 1, weeks 2–3, days 22–60)
 data/kpis.json             Measured crawl metrics, third-party AI grader scores, unavailable metrics
 data/website_errors.csv    74 page-level errors (from Springfield_Website_Errors_Audit.xlsx)
 data/brand_variants.csv    281 pages with non-standard company names

@@ -139,6 +139,20 @@ header[data-testid="stHeader"] {{ background: transparent; }}
 .ev-Proven {{ background: #E3F2E9; color: {GOOD}; }}
 .ev-Emerging {{ background: #FFF1DD; color: #A35A12; }}
 
+.sig-head {{ font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: {MUTED}; font-weight: 700; margin: 10px 0 10px; }}
+.sig {{ background: linear-gradient(160deg, {NAVY} 0%, {NAVY_2} 100%); color: {WHITE}; border-radius: 18px; padding: 24px; height: 100%; }}
+.sig h3 {{ color: {WHITE}; font-family: 'Cormorant Garamond', serif; font-size: 28px; margin: 4px 0 10px; }}
+.sig p {{ color: rgba(255,255,255,.88); font-size: 14.5px; line-height: 1.55; }}
+.sig ul {{ padding-left: 18px; margin: 8px 0 0; color: rgba(255,255,255,.92); font-size: 13.5px; line-height: 1.5; }}
+.sig li {{ margin-bottom: 4px; }}
+.sig-tag {{ display: inline-block; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: #BFD3F2; font-weight: 700; }}
+.sig-small {{ margin-top: 12px; font-size: 12.5px; color: rgba(255,255,255,.7); border-top: 1px solid rgba(255,255,255,.18); padding-top: 10px; }}
+.flow {{ display: grid; grid-template-columns: 1fr auto 1.6fr auto 1fr; gap: 14px; align-items: center; background: {WHITE};
+        border: 1px solid {LINE}; border-radius: 16px; padding: 18px 20px; }}
+.flow-src b {{ color: {NAVY}; font-size: 15.5px; }}
+.flow .k {{ font-size: 12px; color: {MUTED}; margin: 2px 0; }}
+.flow-arrow {{ font-size: 26px; color: {ACCENT}; }}
+.plat {{ display: inline-block; background: #EEF2F8; color: {NAVY}; font-weight: 600; font-size: 13px; border-radius: 999px; padding: 5px 12px; margin: 4px 6px 0 0; }}
 .glossary {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }}
 .gl {{ background: {WHITE}; border: 1px solid {LINE}; border-radius: 14px; padding: 16px 18px; }}
 .gl b {{ color: {NAVY}; font-size: 15px; }}
@@ -153,7 +167,7 @@ div[data-testid="stDownloadButton"] button:hover {{ background: {NAVY_2}; color:
 
 @media (max-width: 900px) {{
   .hero {{ padding: 28px 22px; }} .hero h1 {{ font-size: 32px; }}
-  .issue .row, .glossary {{ grid-template-columns: 1fr; }}
+  .issue .row, .glossary, .flow {{ grid-template-columns: 1fr; }} .flow-arrow {{ transform: rotate(90deg); }}
 }}
 </style>
 """, unsafe_allow_html=True)
@@ -232,7 +246,7 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-tabs = st.tabs(["1 · Overview", "2 · What I found", "3 · AI search check", "4 · My 90-day plan", "5 · What else I can do",
+tabs = st.tabs(["1 · Overview", "2 · What I found", "3 · AI search check", "4 · My 60-day plan", "5 · What else I can do",
                 "6 · Details for the team"])
 
 # ═══════════════════════════ 1. OVERVIEW ═══════════════════════════
@@ -249,17 +263,17 @@ with tabs[0]:
     st.markdown("""
 <div class="glossary">
   <div class="gl"><b>SEO · Google search</b><div>Showing up when someone searches "2 bed apartment Dubai Hills for sale".</div></div>
-  <div class="gl"><b>AEO · Instant answers</b><div>Being the answer Google, Siri or Alexa reads out for "How much do I need for a Golden Visa?".</div></div>
+  <div class="gl"><b>AEO · Instant answers</b><div>Being the answer Google, Siri or Alexa reads out for "What are the costs of buying property in Dubai?".</div></div>
   <div class="gl"><b>GEO · AI assistants</b><div>Being named when someone asks ChatGPT or Gemini "Which agency should I use in Dubai?".</div></div>
 </div>""", unsafe_allow_html=True)
     st.write("")
     section("The story in four steps")
     s = st.columns(4)
     steps = [
-        ("What I found", "Outdated visa rules, a wrong licence number, broken Google titles and the company name written 15+ ways.", "Tab 2"),
+        ("What I found", "Outdated buyer information, a wrong licence number, broken Google titles and the company name written 15+ ways.", "Tab 2"),
         ("How AI sees you", "AI assistants speak well of Springfield but rarely mention it: 1 in 10 on share of voice.", "Tab 3"),
-        ("How I'd fix it", "Serious errors in 48 hours, templates in 2 weeks, content and authority over 90 days.", "Tab 4"),
-        ("What else I can do", "Press features, rankings, Wikipedia readiness, reviews, video and community answers.", "Tab 5"),
+        ("How I'd fix it", "Serious errors in 48 hours, templates in week 1, content and authority within 60 days.", "Tab 4"),
+        ("What else I can do", "Wikipedia and Wikidata, quality blogs, and distribution on LinkedIn, Medium, Substack, Quora and Reddit.", "Tab 5"),
     ]
     for i, (col, (t, p, go_)) in enumerate(zip(s, steps), 1):
         col.markdown(f'<div class="step"><div class="num">{i}</div><h4>{t}</h4><p>{p}</p><div class="go">See {go_} →</div></div>',
@@ -274,22 +288,22 @@ with tabs[0]:
                     "• 18 years of history, RERA licensed, awards from major developers</div>", unsafe_allow_html=True)
     with c2:
         st.markdown('<div class="warn"><b>What is holding it back</b><br>'
-                    "• Some pages give buyers outdated visa rules<br>"
+                    "• Some pages give buyers outdated information<br>"
                     "• Errors visible in Google results and on listings<br>"
                     "• The company name is inconsistent across the web<br>"
                     "• Market reports stopped after May 2026</div>", unsafe_allow_html=True)
     st.write("")
-    st.markdown('<div class="note"><b>My recommendation:</b> fix accuracy first (48 hours), then the listing templates (2 weeks), '
-                "then turn Springfield's own data and expert agents into content other sites and AI tools quote (90 days). "
+    st.markdown('<div class="note"><b>My recommendation:</b> fix accuracy first (48 hours), then the listing templates (week 1), '
+                "then turn Springfield's own data and expert agents into content other sites and AI tools quote (60 days). "
                 "Measure from day one and set targets only after a 4-week baseline.</div>", unsafe_allow_html=True)
 
 # ═══════════════════════════ 2. WHAT I FOUND ═══════════════════════════
 ISSUES = [
-    dict(p="Critical", t="Some pages give buyers outdated visa rules",
+    dict(p="Critical", t="Some pages give buyers outdated information",
          ex="“Purchases starting from AED 750,000 can qualify for an investor visa” — on 9 pages",
-         what="The AED 750,000 minimum for the 2-year property visa was removed in April 2026. Springfield's own Q2 2026 report says so. Older guides also describe rules that no longer apply, such as an AED 10 million Golden Visa threshold.",
+         what="A residency rule quoted on 9 project pages changed in April 2026, and Springfield's own Q2 2026 report already says so. A few older guides have similar out-of-date details.",
          risk="Buyers make decisions on wrong information; it undermines trust in Springfield's expertise.",
-         fix="One verified visa answer used on every page, checked with DLD. About 1–2 days.", ids=["F01", "F02"]),
+         fix="One verified answer kept in one place and used on every page. About 1–2 days.", ids=["F01", "F02"]),
     dict(p="Critical", t="Wrong licence number on 3 listings",
          ex="“RERA ORN: 1192” instead of 11929",
          what="A missing digit in the RERA licence number on three listings.",
@@ -377,18 +391,18 @@ with tabs[2]:
             "3. **Little fresh, quotable data.** Reports paused in May 2026, without dates or named experts."
         )
         st.markdown("**What moves it**")
-        st.markdown("Fix the identity (tab 4) · get listed and featured elsewhere (tab 5) · publish dated data from named experts.")
+        st.markdown("Fix the identity (tab 4) · Wikipedia, Wikidata, blogs and distribution (tab 5) · publish dated data from named experts.")
         st.caption(f"Source: {ag['source']}. ChatGPT scores lowest; it relies heavily on Bing, so Bing Webmaster Tools is part of the plan.")
 
-# ═══════════════════════════ 4. 90-DAY PLAN ═══════════════════════════
+# ═══════════════════════════ 4. 60-DAY PLAN ═══════════════════════════
 with tabs[3]:
-    section("My 90-day plan", "Fix what is wrong first, then build what makes Springfield quoted. Each phase ends with something you can check.")
+    section("My 60-day plan", "Fix what is wrong first, then build what makes Springfield quoted. Each phase ends with something you can check.")
     phases = roadmap["phases"]
     plain = {
-        "48 hours": ("Stop the damage", ["Correct visa pages and licence numbers", "Fix broken Google titles", "Align contact details", "Capture today's baseline"]),
-        "14 days": ("Fix the templates", ["New listing titles and descriptions", "One company name everywhere", "Area guides get real numbers", "Track every call, form and WhatsApp"]),
-        "30 days": ("Become the source", ["One trusted visa guide and cost guide", "Q3 market report with a named analyst", "Expert author profiles", "Wikidata and ranking submissions"]),
-        "90 days": ("Grow and measure", ["Monthly data and PR", "Arabic versions of top guides", "New landing pages where demand exists", "Monthly results report"]),
+        "48 hours": ("Stop the damage", ["Correct outdated pages and licence numbers", "Fix broken Google titles", "Align contact details", "Capture today's baseline"]),
+        "Week 1": ("Fix the templates", ["New listing titles and descriptions", "One company name everywhere", "Area guides get real numbers", "Track every call, form and WhatsApp"]),
+        "Weeks 2–3": ("Become the source", ["Wikidata live, Wikipedia draft ready", "First 4 expert blogs published and distributed", "Q3 market report with a named analyst", "Expert author profiles"]),
+        "Days 22–60": ("Grow and be seen", ["Weekly blogs on LinkedIn, Medium, Substack, Quora, Reddit", "Wikipedia submission and press stories", "Arabic versions of top guides", "Monthly results report"]),
     }
     cols = st.columns(4)
     for col, p in zip(cols, phases):
@@ -422,14 +436,34 @@ with tabs[3]:
         st.markdown(
             "- Website editor access\n- Google Search Console and Google Analytics\n- CRM / listing tool export\n"
             "- Google Business Profiles (both offices)\n- Property Finder and Bayut agency accounts\n"
-            "- About 10–12 developer days over 90 days\n- Quick sign-off from compliance on visa wording"
+            "- About 6–8 developer days over 60 days\n- Quick sign-off on regulated wording"
         )
-        st.markdown('<div class="note">Targets are agreed after a 4-week baseline. I won\'t promise percentages before we have real numbers.</div>',
+        st.markdown('<div class="note">Targets are agreed after a 4-week baseline, captured in parallel with the work. I won\'t promise percentages before we have real numbers.</div>',
                     unsafe_allow_html=True)
 
 # ═══════════════════════════ 5. WHAT ELSE I CAN DO ═══════════════════════════
 with tabs[4]:
     section("What else I can do", growth["intro"])
+    st.markdown('<div class="sig-head">Three things I would start in the first month</div>', unsafe_allow_html=True)
+    sig_cols = st.columns(3)
+    for col, sg in zip(sig_cols, growth["signature"]):
+        small = f'<div class="sig-small">{sg["small"]}</div>' if sg["small"] else ""
+        col.markdown(
+            f'<div class="sig"><div class="sig-tag">{sg["tag"]}</div><h3>{sg["title"]}</h3><p>{sg["pitch"]}</p><ul>'
+            + "".join(f"<li>{d}</li>" for d in sg["deliverables"]) + f"</ul>{small}</div>",
+            unsafe_allow_html=True)
+    st.write("")
+    plats = "".join(f'<span class="plat">{p}</span>' for p in growth["platforms"])
+    st.markdown(f'''
+<div class="flow">
+  <div class="flow-src"><div class="k">One article</div><b>Published on springfieldproperties.ae</b><div class="k">expert-signed, answer-first, sourced</div></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-dst"><div class="k">Distributed to</div>{plats}</div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-src"><div class="k">Result</div><b>More reach, links and mentions</b><div class="k">that Google and AI assistants pick up</div></div>
+</div>''', unsafe_allow_html=True)
+    st.write("")
+    st.markdown('<div class="sig-head">More ways to grow</div>', unsafe_allow_html=True)
     services = growth["services"]
     groups = list(dict.fromkeys(s["group"] for s in services))
     kpi_row([
@@ -454,15 +488,9 @@ with tabs[4]:
             with col.expander("How I'd do it"):
                 st.markdown("\n".join(f"{n}. {x}" for n, x in enumerate(s["how"], 1)))
         st.write("")
-    c1, c2 = st.columns([1.2, 1])
-    with c1:
-        st.markdown('<div class="note"><b>Wikipedia, honestly:</b> a page can only be approved when independent publications have written '
-                    "about Springfield in depth. Today the coverage is mostly interviews and market quotes. I can create the Wikidata entry now, "
-                    "build the press coverage, and submit a properly disclosed draft when the sources exist. Typical path: 6–12 months.</div>",
-                    unsafe_allow_html=True)
-    with c2:
-        st.markdown("**What I won't do**")
-        st.markdown("\n".join(f"- {w}" for w in growth["wont_do"]))
+    st.markdown('<div class="note"><b>How I work:</b> ' + " · ".join(growth["wont_do"]).replace("Buy", "I never buy", 1)
+                .replace("Write fake", "write fake").replace("Edit Wikipedia", "edit Wikipedia").replace("Spam forums", "spam forums")
+                + ".</div>", unsafe_allow_html=True)
     st.caption("Proven = long-established search and PR practice. Emerging = widely observed in AI answers, but no search engine publishes how much it counts.")
 
 # ═══════════════════════════ 6. DETAILS FOR THE TEAM ═══════════════════════════
@@ -512,7 +540,7 @@ with tabs[5]:
                                   f"Cut-off descriptions ({len(cutoff_df)} examples)"], horizontal=True, key="ev_ds")
         if ds.startswith("Findings"):
             e1, e2, e3, e4 = st.columns([1.6, 1, 1, 1])
-            q = e1.text_input("Search", key="ex_q", placeholder="e.g. visa, ORN, Parkwood")
+            q = e1.text_input("Search", key="ex_q", placeholder="e.g. ORN, titles, Parkwood")
             cats = e2.multiselect("Area", sorted(df_all["category"].unique()), key="ex_cat")
             prs = e3.multiselect("Priority", PRIORITY_ORDER, key="ex_pr")
             urlq = e4.text_input("URL contains", key="ex_url", placeholder="/projects/")

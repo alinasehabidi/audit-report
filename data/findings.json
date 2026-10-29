@@ -151,7 +151,7 @@
     "effort": "2–3 days",
     "role": "MarTech + Developer + Listings admin",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "0 non-approved variants",
     "validation": "Weekly automated scan",
     "status": "Open"
@@ -205,7 +205,7 @@
     "effort": "0.5–1 day",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "0 descriptions ending mid-word",
     "validation": "Re-crawl meta descriptions",
     "status": "Open"
@@ -232,7 +232,7 @@
     "effort": "1 day",
     "role": "Developer + MarTech",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Pattern applied to all listings",
     "validation": "Sample 20 listings; GSC CTR by listing",
     "status": "Open"
@@ -260,7 +260,7 @@
     "effort": "0.5 day",
     "role": "Content",
     "owner": "Independent",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "0 internal contradictions on top 10 guides",
     "validation": "Manual review checklist",
     "status": "Open"
@@ -289,7 +289,7 @@
     "effort": "2–3 days, then monthly",
     "role": "MarTech + Analyst",
     "owner": "Company access",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Report within 15 days of each month end",
     "validation": "Reports page dates",
     "status": "Open"
@@ -317,7 +317,7 @@
     "effort": "1 day",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Alt text on content images",
     "validation": "Lighthouse accessibility audit",
     "status": "Open"
@@ -343,7 +343,7 @@
     "effort": "0.5 day",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "og:image = property photo",
     "validation": "Facebook Sharing Debugger / WhatsApp preview",
     "status": "Open"
@@ -370,7 +370,7 @@
     "effort": "1–2 days",
     "role": "Developer + Listings admin",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Links on all mapped listings",
     "validation": "Crawl internal link counts",
     "status": "Open"
@@ -396,7 +396,7 @@
     "effort": "0.5 day",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Field correct or hidden",
     "validation": "Sample check",
     "status": "Open"
@@ -426,7 +426,7 @@
     "effort": "1 day, then monthly",
     "role": "Listings admin",
     "owner": "Independent",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "0 past dates on off-plan pages",
     "validation": "Monthly crawl",
     "status": "Open"
@@ -454,7 +454,7 @@
     "effort": "1 day",
     "role": "Listings admin + Developer",
     "owner": "Independent",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "0 flagged words",
     "validation": "Re-run spell scan",
     "status": "Open"
@@ -609,7 +609,7 @@
     "effort": "1 hour",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "One format",
     "validation": "Click test",
     "status": "Open"
@@ -636,7 +636,7 @@
     "effort": "1 hour",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "One format",
     "validation": "Re-crawl",
     "status": "Open"
@@ -663,7 +663,7 @@
     "effort": "3 days, then quarterly",
     "role": "MarTech + Analyst",
     "owner": "Independent",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Block live on top 8 guides",
     "validation": "Page check; GSC impressions for area queries",
     "status": "Open"
@@ -690,7 +690,7 @@
     "effort": "1 day",
     "role": "MarTech",
     "owner": "Company access",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Author on all new and top 20 pages",
     "validation": "Rich Results Test",
     "status": "Open"
@@ -717,7 +717,7 @@
     "effort": "4–5 days",
     "role": "Developer + Content",
     "owner": "Developer",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Pages indexed; leads attributed",
     "validation": "GSC; GA4 landing page report",
     "status": "Open"
@@ -747,7 +747,7 @@
     "effort": "3 days",
     "role": "Content + Developer",
     "owner": "Independent",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "2 canonical guides live",
     "validation": "Redirect and GSC check",
     "status": "Open"
@@ -775,7 +775,7 @@
     "effort": "1–2 days",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Valid markup on all templates",
     "validation": "Rich Results Test; Schema validator",
     "status": "Open"
@@ -803,7 +803,7 @@
     "effort": "2 days, then ongoing",
     "role": "MarTech + PR",
     "owner": "Company access",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Profiles aligned; Wikidata live",
     "validation": "Monthly AI prompt test",
     "status": "Open"
@@ -829,7 +829,7 @@
     "effort": "5 days",
     "role": "Content + Developer",
     "owner": "Developer",
-    "phase": "90 days",
+    "phase": "Days 22–60",
     "success_metric": "Arabic pages indexed",
     "validation": "GSC",
     "status": "Open"
@@ -859,7 +859,7 @@
     "effort": "0.5 day",
     "role": "MarTech",
     "owner": "Company access",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Section live",
     "validation": "Manual check",
     "status": "Open"
@@ -885,7 +885,7 @@
     "effort": "0.5 day",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "30 days",
+    "phase": "Weeks 2–3",
     "success_metric": "Per-type coverage in GSC",
     "validation": "GSC Sitemaps report",
     "status": "Open"
@@ -910,7 +910,7 @@
     "effort": "1 hour",
     "role": "Developer",
     "owner": "Developer",
-    "phase": "90 days",
+    "phase": "Days 22–60",
     "success_metric": "File live",
     "validation": "Fetch test",
     "status": "Open"
@@ -1002,7 +1002,7 @@
     "effort": "0.5 day",
     "role": "MarTech",
     "owner": "Company access",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Source on 95%+ of web leads",
     "validation": "CRM report",
     "status": "Open"
@@ -1048,7 +1048,7 @@
     "effort": "0.5 day",
     "role": "MarTech",
     "owner": "Company access",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "0 broken internal links",
     "validation": "Crawl report",
     "status": "Open"
@@ -1071,7 +1071,7 @@
     "effort": "2 hours",
     "role": "MarTech",
     "owner": "Company access",
-    "phase": "14 days",
+    "phase": "Week 1",
     "success_metric": "Both profiles consistent",
     "validation": "GBP review",
     "status": "Open"
