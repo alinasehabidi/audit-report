@@ -46,3 +46,12 @@ data/cutoff_descriptions.csv 44 examples of listing descriptions cut mid-word
 
 - No traffic, rankings, search volumes, Core Web Vitals or AI citation counts are estimated.
 - AI visibility scores come from one third-party grader run on 28 Oct 2026 and are labelled as such.
+
+## Adding your introduction video
+
+The video appears at the top of the Overview tab. Use **one** of these:
+
+- **Video file:** save it as `assets/intro.mp4` (or `.webm` / `.mov`). Keep it under about 50 MB so GitHub and Streamlit Cloud handle it smoothly.
+- **Link:** paste a YouTube (unlisted is fine), Vimeo or Loom link into `"url"` in `data/intro_video.json`.
+
+If neither is set, the video section is hidden. Edit the title and the three bullet points in `data/intro_video.json`.

@@ -17,6 +17,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="Springfield Properties · Website & AI Search Audit", page_icon="🏢",
                    layout="wide", initial_sidebar_state="collapsed")
@@ -153,6 +154,10 @@ header[data-testid="stHeader"] {{ background: transparent; }}
 .flow .k {{ font-size: 12px; color: {MUTED}; margin: 2px 0; }}
 .flow-arrow {{ font-size: 26px; color: {ACCENT}; }}
 .plat {{ display: inline-block; background: #EEF2F8; color: {NAVY}; font-weight: 600; font-size: 13px; border-radius: 999px; padding: 5px 12px; margin: 4px 6px 0 0; }}
+.intro-pt {{ display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; color: {INK}; margin: 10px 0; line-height: 1.45; }}
+.intro-pt span {{ flex: 0 0 26px; height: 26px; border-radius: 50%; background: {NAVY}; color: {WHITE}; font-size: 13px; font-weight: 700;
+                 display: flex; align-items: center; justify-content: center; }}
+[data-testid="stVideo"] video, iframe {{ border-radius: 16px; }}
 .glossary {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }}
 .gl {{ background: {WHITE}; border: 1px solid {LINE}; border-radius: 14px; padding: 16px 18px; }}
 .gl b {{ color: {NAVY}; font-size: 15px; }}
@@ -235,6 +240,30 @@ def proof(ids):
             st.caption(f"How we'll know it's fixed: {f['success_metric']} · Check: {f['validation']}")
 
 
+
+def intro_video_source():
+    """Return ('file', path) or ('url', link) for the intro video, or (None, None) if not set."""
+    cfg = json.loads((DATA / "intro_video.json").read_text(encoding="utf-8")) if (DATA / "intro_video.json").exists() else {}
+    for name in ["intro.mp4", "intro.webm", "intro.mov"]:
+        f = Path(__file__).parent / "assets" / name
+        if f.exists():
+            return "file", str(f), cfg
+    if cfg.get("url", "").strip():
+        return "url", cfg["url"].strip(), cfg
+    return None, None, cfg
+
+
+def show_video(kind, src):
+    if kind == "file":
+        st.video(src)
+    elif "loom.com/share/" in src:
+        components.iframe(src.replace("/share/", "/embed/"), height=380)
+    elif "vimeo.com/" in src and "player.vimeo.com" not in src:
+        vid = src.rstrip("/").split("/")[-1]
+        components.iframe(f"https://player.vimeo.com/video/{vid}", height=380)
+    else:
+        st.video(src)  # YouTube links and direct .mp4 URLs
+
 # ─────────────────────────── Hero ───────────────────────────
 st.markdown(f"""
 <div class="hero">
@@ -251,6 +280,21 @@ tabs = st.tabs(["1 · Overview", "2 · What I found", "3 · AI search check", "4
 
 # ═══════════════════════════ 1. OVERVIEW ═══════════════════════════
 with tabs[0]:
+    v_kind, v_src, v_cfg = intro_video_source()
+    if v_kind:
+        vc1, vc2 = st.columns([1.35, 1], vertical_alignment="center")
+        with vc1:
+            show_video(v_kind, v_src)
+        with vc2:
+            st.markdown(f'<div class="section" style="font-size:30px">{v_cfg.get("title", "A short introduction")}</div>', unsafe_allow_html=True)
+            pts = v_cfg.get("points", [])
+            if pts:
+                st.markdown('<div class="lead" style="margin-bottom:6px">In this video:</div>' +
+                            "".join(f'<div class="intro-pt"><span>{i}</span>{t}</div>' for i, t in enumerate(pts, 1)),
+                            unsafe_allow_html=True)
+            st.markdown(f'<div style="color:{MUTED};font-size:13.5px;margin-top:12px">Then explore the tabs above: what I found, how AI sees Springfield, '
+                        "my 60-day plan and what else I can do.</div>", unsafe_allow_html=True)
+        st.write("")
     kpi_row([
         ("748", "pages checked", "Every page in the website's sitemap"),
         ("7", "problems that matter", "Out of 41 items logged for the team"),

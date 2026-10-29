@@ -1,0 +1,1 @@
+Put your introduction video here as intro.mp4 (or intro.webm / intro.mov). Keep it under ~50 MB; for larger files use an unlisted YouTube link in data/intro_video.json instead.

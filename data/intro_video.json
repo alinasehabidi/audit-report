@@ -1,0 +1,10 @@
+{
+  "url": "https://promptifyig.com/wp-content/uploads/2026/10/intro.mp4",
+  "title": "A 1-minute introduction from Ali",
+  "points": [
+    "Who I am and why I looked at Springfield's website",
+    "The three biggest things I found",
+    "How I'd help in the first 60 days"
+  ],
+  "_help": "Paste a YouTube, Vimeo or Loom link in 'url', OR put your video file at assets/intro.mp4 and leave 'url' empty."
+}
